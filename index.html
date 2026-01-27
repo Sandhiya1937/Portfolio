@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sandhiya | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <!-- ====== WELCOME SCREEN (3 seconds auto-enter) ====== -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-content">
+      
+      <p class="gradient-text">Full Stack Developer</p>
+      <p class="gradient-text">Turning ideas into fast, scalable digital products</p>
+      <button class="enter-btn">Portfolio</button>
+    </div>
+  </div>
+
+  <!-- ====== MAIN PORTFOLIO (hidden initially) ====== -->
+  <div class="main-content" id="mainContent">
+    <!-- ====== HEADER / NAVBAR ====== -->
+    <header>
+      <h2 class="logo">Sandhiya.</h2>
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#professional-skills">Professional</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#professional-skills">Professional</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="profile-image">
+          <img src="assests/my_img.jpeg" alt="Sandhiya - Full Stack Developer" class="profile-img">
+        </div>
+        <div class="hero-content">
+          <h3>Full Stack Developer</h3>
+          <h3 class="gradient-text">Hi, I'm Sandhiya</h3>
+          <h3 class="gradient-text">Turning ideas into fast, scalable products</h3>
+          <p>
+            Computer Science graduate with hands-on experience building scalable web applications across the MERN stack.
+            I enjoy crafting clean user interfaces, robust APIs, and data-driven solutions that solve real problems.
+          </p>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/sandhiya3003" aria-label="LinkedIn" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Sandhiya1937" aria-label="GitHub" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/Sandhiya_300/" aria-label="LeetCode" target="_blank" class="social-btn">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="hero-buttons">
+            <a href="
+            assests/Sandhiya_CV.pdf" target="_blank" class="btn secondary">Download CV</a>
+            <a href="#projects" class="btn secondary">Real-time Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>
+          I am a passionate full stack developer with experience in building responsive interfaces and scalable backend
+          systems using the MERN stack and RESTful APIs. I enjoy solving algorithmic problems to sharpen my logic and
+          currently explore Machine Learning to create intelligent, data-driven applications. My focus is on writing
+          clean, maintainable code and delivering products that are both technically solid and user-centric.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== STATS ====== -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3 class="stat-number">370+</h3>
+          <p class="stat-text">Problems Solved</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">3+</h3>
+          <p class="stat-text">Projects Completed</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">6+</h3>
+          <p class="stat-text">Competitions Participated</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">1</h3>
+          <p class="stat-text">Internship Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assests/brain_tumor.png" alt="Brain Tumor Detection System">
+          </div>
+          <div class="project-content">
+            <div class="project-top">
+              <span class="project-year">2025</span>
+              <span class="project-tag">Major Project</span>
+            </div>
+            <h3>Brain Tumor Detection System</h3>
+            <p>
+              Web-based ML application that processes MRI images, runs a trained deep learning model, and predicts the
+              presence and type of brain tumor, supporting clinicians with faster, data-backed decisions.
+            </p>
+            <a href="https://github.com/Sandhiya1937/Brain_tumor.git" target="_blank" class="read-more">View on GitHub</a>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>CNN</span>
+              <span>U-Net</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assests/schedules.png" alt="Smart Scheduler System">
+          </div>
+          <div class="project-content">
+            <div class="project-top">
+              <span class="project-year">2024</span>
+              <span class="project-tag">Full Stack</span>
+            </div>
+            <h3>Smart Scheduler System</h3>
+            <p>
+              Centralized scheduling module for creating, managing, and monitoring bookings with conflict checking, slot
+              allocation, and multi-day support to keep operations organized and efficient.
+            </p>
+            <a href="https://github.com/Sandhiya1937/Schedules.git" target="_blank" class="read-more">View on GitHub</a>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assests/crm.png" alt="CRM Sales Platform">
+          </div>
+          <div class="project-content">
+            <div class="project-top">
+              <span class="project-year">2025</span>
+              <span class="project-tag">MERN</span>
+            </div>
+            <h3>CRM Sales Platform</h3>
+            <p>
+              Customer relationship platform to manage leads, sales pipelines, and customer interactions with clean data
+              organization and actionable insights to support better sales decisions.
+            </p>
+            <a href="https://github.com/Sandhiya1937/Red_Angle.git" target="_blank" class="read-more">View on GitHub</a>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="journey" id="journey">
+  <h2 class="section-title">My Journey</h2>
+
+  <div class="timeline">
+
+    <!-- SCHOOL -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <span class="journey-pill">School</span>
+        <h3>Jai Saradha MHSS, Tiruppur</h3>
+        <p>Higher Secondary</p>
+        <span>Percentage: 88.9%</span>
+      </div>
+    </div>
+
+    <!-- COLLEGE -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <span class="journey-pill">College</span>
+        <h3>Bannari Amman Institute of Technology</h3>
+        <p>B.E. Computer Science and Engineering</p>
+        <span>CGPA: 8.36</span>
+      </div>
+    </div>
+
+    <!-- INTERNSHIP -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <span class="journey-pill">Internship</span>
+        <h3>Echo Digitals Pvt. Ltd</h3>
+        <p>Full Stack Developer Intern</p>
+        <span>1 Month • 2025</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== TECHNICAL SKILLS ====== -->
+<!-- ====== TECHNICAL SKILLS ====== -->
+<section class="skills" id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-cards">
+
+    <!-- FRONTEND -->
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="skill-icons">
+        <div><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div><i class="fab fa-react"></i><span>React</span></div>
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <div class="skill-icons">
+        <div><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div><i class="fas fa-server"></i><span>Express</span></div>
+        <div><i class="fas fa-code"></i><span>REST APIs</span></div>
+      </div>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="skill-card">
+      <h3>Database</h3>
+      <div class="skill-icons">
+        <div><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+        <div><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+      </div>
+    </div>
+
+    <!-- MACHINE LEARNING -->
+    <div class="skill-card">
+      <h3>Machine Learning</h3>
+      <div class="skill-icons">
+        <div><i class="fab fa-python"></i><span>Python</span></div>
+        <div><i class="fas fa-brain"></i><span>TensorFlow</span></div>
+        <div><i class="fas fa-project-diagram"></i><span>CNN</span></div>
+      </div>
+    </div>
+
+    <!-- TOOLS & DESIGN -->
+    <div class="skill-card">
+      <h3>Tools & Design</h3>
+      <div class="skill-icons">
+        <div><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div><i class="fab fa-figma"></i><span>Figma</span></div>
+        <div><i class="fas fa-tools"></i><span>Postman</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ====== PROFESSIONAL SKILLS (CIRCULAR PROGRESS BARS) ====== -->
+    <section class="professional-skills" id="professional-skills">
+      <h2 class="section-title">Professional Skills</h2>
+      <div class="pro-skill-grid">
+        <!-- Skills -->
+        <div class="circle-skill" style="--percent:90">
+          <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">90%</div>
+          <p>Creativity</p>
+        </div>
+
+        <div class="circle-skill" style="--percent:60">
+          <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">60%</div>
+          <p>Communication</p>
+        </div>
+
+        <div class="circle-skill" style="--percent:85">
+          <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">85%</div>
+          <p>Leadership</p>
+        </div>
+
+        <div class="circle-skill" style="--percent:80">
+          <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">80%</div>
+          <p>Team Work</p>
+        </div>
+
+        <div class="circle-skill" style="--percent:75">
+          <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">75%</div>
+          <p>Problem Solving</p>
+        </div>
+
+        <div class="circle-skill" style="--percent:70">
+         <svg viewBox="0 0 120 120">
+
+  <!-- DEFINES THE GRADIENT (VERY IMPORTANT) -->
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#7f5af0" />
+      <stop offset="100%" stop-color="#2cb67d" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND CIRCLE -->
+  <circle
+    class="bg"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+  <!-- PROGRESS CIRCLE -->
+  <circle
+    class="progress"
+    cx="60"
+    cy="60"
+    r="52"
+  ></circle>
+
+</svg>
+
+          <div class="skill-value">70%</div>
+          <p>Adaptability</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== HIGHLIGHTS ====== -->
+    <section class="highlight-section" id="highlights">
+      <h2 class="section-title">Certifications & Achievements</h2>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <span class="highlight-label">Certification</span>
+          <h3>Python Programming – Grade A</h3>
+          <p>KICE Institute, Tiruppur</p>
+          <span>2023 • Python · Django · Tkinter</span>
+          <a href="certificates/python.png" target="_blank" class="view-btn">View</a>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-label">Certification</span>
+          <h3>Google Digital Marketing</h3>
+          <p>Google Certification</p>
+          <span>2025 • SEO · SEM · Analytics</span>
+          <a href="certificates/google-dm.png" target="_blank" class="view-btn">View</a>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-label">Achievement</span>
+          <h3>2nd Runner-Up – Tech Dojo</h3>
+          <p>PSG College of Technology, Coimbatore</p>
+          <small>2025 • Problem-solving & product thinking</small>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-label">Achievement</span>
+          <h3>Finalist – TANCAM Women's Hackathon</h3>
+          <p>Kumaraguru College of Technology</p>
+          <small>2025 • Prototype design & implementation</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCE ====== -->
+    <section class="experience" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <div class="exp-role">Full Stack Developer Intern</div>
+            <div class="exp-company">Echo Digitals Pvt. Ltd</div>
+          </div>
+          <div class="exp-duration">1 Month • 2025</div>
+        </div>
+        <div class="exp-project-title">CRM Sales Module – Real-time Project</div>
+        <p class="exp-description">
+          Contributed to a CRM sales module that manages leads, deals, and customer interactions for real clients. Built
+          responsive React screens, integrated APIs, and implemented secure data access with Prisma and PostgreSQL.
+        </p>
+        <p class="exp-description">
+          Focused on creating clear pipeline views, reusable UI components, and efficient backend endpoints to keep the
+          sales workflow smooth and trackable for the internal team.
+        </p>
+        <div class="exp-tech">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>PostgreSQL</span>
+          <span>Prisma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h3 class="contact-title">Let's build something impactful</h3>
+          <p class="contact-subtitle">
+            Open to full-time roles, internships, and collaboration on real-world web applications and ML-powered products.
+          </p>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <a href="mailto:sandhiya.cs300@gmail.com">sandhiya.cs300@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <a href="https://github.com/Sandhiya1937" target="_blank">github.com/Sandhiya1937</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <a href="https://www.linkedin.com/in/sandhiya3003" target="_blank">linkedin.com/in/sandhiya3003</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-code"></i></div>
+            <a href="https://leetcode.com/Sandhiya_300/" target="_blank">leetcode.com/Sandhiya_300</a>
+          </div>
+          <div class="contact-badge">
+            Together we can transform ideas into captivating digital experiences, that leave a lasting impact.
+          </div>
+        </div>
+        <div class="contact-right">
+          <h3>Send a quick message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Summary?</label>
+              <input id="subject" type="text" placeholder=" " required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Share a short summary of your requirements or idea." required></textarea>
+            </div>
+            <div class="contact-submit">
+              <button type="submit" class="btn primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <p>© 2026 Sandhiya — Crafted with curiosity and clean code.</p>
+    </footer>
+  </div>
+
+  <script>
+    // ====== WELCOME SCREEN TRANSITION ======
+    function enterPortfolio() {
+      const welcomeScreen = document.getElementById('welcomeScreen');
+      const mainContent = document.getElementById('mainContent');
+
+      // Fade out welcome, fade in main
+      welcomeScreen.style.opacity = '0';
+      welcomeScreen.style.transform = 'scale(0.95)';
+      
+      mainContent.style.opacity = '1';
+      mainContent.style.transform = 'scale(1)';
+
+      // Hide welcome after transition
+      setTimeout(() => {
+        welcomeScreen.style.display = 'none';
+        // Smooth scroll to hero
+        document.querySelector('#home').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 600);
+    }
+
+    // Auto-enter after 3 seconds OR click button
+    setTimeout(enterPortfolio, 3000);
+    
+    // Also trigger on click
+    document.querySelector('.enter-btn').addEventListener('click', enterPortfolio);
+    document.getElementById('welcomeScreen').addEventListener('click', enterPortfolio);
+
+    // ====== MOBILE MENU ======
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+      menuToggle.innerHTML = mobileNav.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+
+    // ====== SMOOTH SCROLL FOR ALL LINKS ======
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // ====== FORM SUBMISSION ======
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // In a real application, you would send this data to a server
+      // For now, we'll just show a success message and log to console
+      console.log('Form submitted:', { name, email, subject, message });
+      
+      // Show success message
+      alert(`Thank you ${name}! Your message has been sent. I'll get back to you at ${email} within 24 hours.`);
+      
+      // Reset form
+      this.reset();
+    });
+
+    // ====== ANIMATE PROGRESS CIRCLES ======
+    const animateOnScroll = () => {
+      const circleSkills = document.querySelectorAll('.circle-skill');
+      circleSkills.forEach(skill => {
+        const skillPosition = skill.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+        if (skillPosition < screenPosition) {
+          skill.classList.add('animate');
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+</body>
+</html>
