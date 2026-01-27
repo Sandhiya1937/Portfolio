@@ -38,13 +38,6 @@ body {
   animation: welcomeFadeIn 1.5s ease-out;
 }
 
-.welcome-content h3 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 12px;
-  opacity: 0.9;
-}
-
 .welcome-content h2 {
   font-size: 56px;
   font-weight: 800;
@@ -58,6 +51,15 @@ body {
   font-size: 18px;
   max-width: 500px;
   margin-inline: auto;
+}
+
+/* ADD THIS FOR GRADIENT TEXT IN WELCOME SCREEN */
+.welcome-content .gradient-text {
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .enter-btn {
@@ -527,16 +529,6 @@ section {
   background: #0f172a;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 60px;
-  background: linear-gradient(90deg, #7f5af0, #2cb67d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* TIMELINE */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -591,6 +583,17 @@ section {
   line-height: 1.6;
 }
 
+.journey-pill {
+  display: inline-block;
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 /* ===== CATEGORY SKILL CARDS ===== */
 .skills {
   padding: 80px 10%;
@@ -634,6 +637,7 @@ section {
   display: block;
   font-size: 0.8rem;
   margin-top: 6px;
+  color: #e5e7eb;
 }
 
 .skill-card:hover {
