@@ -82,7 +82,7 @@ body {
   box-shadow: 0 12px 35px rgba(127, 90, 240, 0.5);
 }
 
-/* ====== MAIN CONTENT (hidden initially) ====== */
+/* ====== MAIN CONTENT ====== */
 .main-content {
   opacity: 0;
   transform: scale(0.95);
@@ -855,7 +855,7 @@ svg:not(.circle-skill svg) {
   background: rgba(6, 78, 59, 0.6);
 }
 
-/* ========== CONTACT SECTION (RESPONSIVE) ========== */
+/* ========== CONTACT SECTION ========== */
 .contact {
   padding: 60px 20px;
   background: radial-gradient(circle at center, #1e293b, #020617 70%);
@@ -945,7 +945,7 @@ svg:not(.circle-skill svg) {
   text-align: center;
 }
 
-/* Contact Right Side - Form */
+/* Contact Form */
 .contact-right h3 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -1016,9 +1016,38 @@ svg:not(.circle-skill svg) {
   transition: all 0.3s ease;
 }
 
-.contact-submit .btn.primary:hover {
+.contact-submit .btn.primary:hover:not(:disabled) {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(127, 90, 240, 0.4);
+}
+
+.contact-submit .btn.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ========== FORM LOADING ANIMATION ========== */
+.btn-loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 /* ========== FOOTER ========== */
@@ -1054,10 +1083,6 @@ footer {
     display: block;
   }
 
-  .journey-grid {
-    grid-template-columns: 1fr;
-  }
-
   .highlight-grid {
     grid-template-columns: 1fr;
   }
@@ -1081,10 +1106,6 @@ footer {
     font-size: 42px;
   }
   
-  .welcome-content h3 {
-    font-size: 24px;
-  }
-  
   .section-title {
     font-size: 32px;
   }
@@ -1101,7 +1122,6 @@ footer {
     padding: 60px 30px;
   }
   
-  /* Contact specific for tablet */
   .contact {
     padding: 50px 20px;
   }
@@ -1152,7 +1172,6 @@ footer {
     font-size: 28px;
   }
   
-  /* Contact specific for mobile */
   .contact {
     padding: 40px 15px;
   }
@@ -1216,7 +1235,6 @@ footer {
     font-size: 15px;
   }
   
-  /* Button fixes for mobile */
   .btn {
     padding: 10px 20px;
     font-size: 13px;
@@ -1233,13 +1251,11 @@ footer {
     font-size: 18px;
   }
   
-  /* Footer mobile */
   footer {
     padding: 25px 15px;
     font-size: 12px;
   }
   
-  /* Skills grid fix */
   .skill-icons {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1292,7 +1308,7 @@ footer {
   }
 }
 
-/* Fix for very small screens - prevent horizontal scroll */
+/* Fix for very small screens */
 @media (max-width: 320px) {
   .contact-item a {
     font-size: 12px;
@@ -1314,42 +1330,10 @@ footer {
   }
 }
 
-/* Dark mode adjustments for better contrast */
-@media (prefers-color-scheme: dark) {
-  .contact-left,
-  .contact-right {
-    background: rgba(15, 23, 42, 0.98);
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    background: rgba(30, 41, 59, 0.8);
-  }
-}
-
-/* Fix for Safari mobile input zoom */
+/* Safari mobile input zoom fix */
 @supports (-webkit-touch-callout: none) {
   .form-group input,
   .form-group textarea {
-    font-size: 16px; /* Prevents zoom on focus in iOS Safari */
-  }
-}
-
-/* Print styles */
-@media print {
-  .welcome-screen,
-  .menu-toggle,
-  .social-icons,
-  .contact-form {
-    display: none;
-  }
-  
-  .main-content {
-    opacity: 1;
-    transform: none;
-  }
-  
-  .hero {
-    min-height: auto;
+    font-size: 16px;
   }
 }
